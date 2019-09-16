@@ -49,7 +49,7 @@ module.exports = {
       test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
       loader: 'file-loader',
       options: {
-        name: '[name].[ext]'
+        name: `${PATHS.assets}/fonts/[name].[ext]`
       }
     }, {
       test: /\.vue$/,
@@ -103,7 +103,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/${PATHS.assets}/img`, to: `${PATHS.assets}img` },
-      { from: `${PATHS.src}/${PATHS.assets}/fonts`, to: `${PATHS.assets}fonts` },
+      //{ from: `${PATHS.src}/${PATHS.assets}/fonts`, to: `${PATHS.assets}fonts` },
       { from: `${PATHS.src}/static`, to: '' }
     ]),
     new HtmlWebpackPlugin({

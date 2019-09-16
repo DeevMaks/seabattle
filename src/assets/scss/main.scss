@@ -1,4 +1,33 @@
+@import "../css/reset.css";
+@import "../css/main.css";
+
 @import "utils/libs";
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
+
+html {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  line-height: $mainLineHeight;
+  color: $mainFontColor;
+  background-color: $default-color;
+}
+
+* {
+  border-color: $light-color;
+}
+
+.header {
+  background-color: $dark-primary;
+  border-bottom: 1px solid;
+  color: $mainFontColor;
+  font-weight: 600;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+
+  &__logo {
+
+  }
+}

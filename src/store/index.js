@@ -3,10 +3,10 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-import example from './example'
+import seabattle from './seabattle'
 
 export default new Vuex.Store({
   modules: {
-    example,
+    seabattle,
   }
 })
