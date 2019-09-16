@@ -1,0 +1,17 @@
+{
+    "name": "devmart/seabattle",
+    "authors": [
+        {
+            "name": "Deev Maks (DevMArt)",
+            "email": "deev.maks2012@ya.ru"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "SeaBattle\\": "app"
+      }
+    },
+    "require": {
+        "cboden/ratchet": "^0.4.1"
+    }
+}

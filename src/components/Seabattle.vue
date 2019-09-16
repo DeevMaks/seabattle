@@ -14,6 +14,9 @@ import chat from './Chat.vue'
 export default {
   components: {
     chat
+  },
+  mounted() {
+    this.$store.dispatch('SOCKET_CONNECT')
   }
 }
 </script>
