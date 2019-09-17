@@ -15,8 +15,8 @@ export default {
   components: {
     chat
   },
-  mounted() {
-    this.$store.dispatch('SOCKET_CONNECT')
+  mounted(){
+    this.$store.dispatch('SOCKET_START')
   }
 }
 </script>

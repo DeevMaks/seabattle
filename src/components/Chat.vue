@@ -14,7 +14,7 @@
       </li>
     </ul>
     <div class="chat__form">
-      <form @submit="send(evt)">
+      <form @submit="send($event)">
         <input
           class="chat__me"
           type="text"
@@ -32,6 +32,7 @@
 
 <script>
 export default {
+  name: "chat",
   data() {
     return {
       message: {
@@ -54,10 +55,11 @@ export default {
       }
     }
   },
+
   methods: {
     send(evt) {
       evt.preventDefault()
-      this.$store.dispatch('SOCKET_SEND', this.message.text)
+      this.$store.dispatch('SOCKET_SEND', {author: this.me, message: this.message.text})
       return false;
     }
   }
